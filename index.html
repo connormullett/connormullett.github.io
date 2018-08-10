@@ -58,7 +58,6 @@
         <div class="mx-auto text-center">
           <h1 class="mx-auto my-0 text-uppercase">Connor Robert Mullett</h1>
           <h2 class="text-white-50 mx-auto mt-2 mb-5">Citizen Soldier - Software Developer</h2>
-          <a href="#about" class="btn btn-primary js-scroll-trigger">about me</a>
         </div>
       </div>
     </header>
@@ -75,7 +74,6 @@
               My father, being a developer himself, has been a huge influence on my decision to follow this path. The Army has instilled in me 
               much more than I can write, but I hold true to the values, even as a civilian.
             </p>
-            <a class="nav-link js-scroll-trigger" href="#projects">More..</a>
             <br>
           </div>
         </div>
@@ -148,13 +146,53 @@
     <!-- Contact Section -->
     <section class="contact-section bg-black wow slideInLeft">
       <div class="container">
+        <div class="row">
+            <div class="col-md-offset-2 col-md-12">
+                <form action="https://formspree.io/connormullett@gmail.com" method="POST">
+                    <div class="control-group">
+                        <div class="form-group">
+                            <label class="text-white">Name</label>
+                            <div>
+                              <input type="text" class="form-control" placeholder="Your Name" id="name" required="" data-validation-required-message="Please enter your name"
+                                name="name">
+                            </div>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="form-group">
+                            <label class="text-white">Email Address</label>
+                            <input type="email" class="form-control" placeholder="Your Email" id="email" required="" data-validation-required-message="Please enter your email"
+                                name="_replyto">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="form-group">
+                            <textarea class="form-control" rows="7" placeholder="Your Message" id="message" required="" data-validation-required-message="Please leave a message"
+                                name="message"></textarea>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div id="success"></div>
+                        <button type="submit" class="btn btn-lg btn-black">
+                            <i class="fa fa-paper-plane-o" aria-hidden="true"></i> Send Message</button>
+                    </div>
+                    <br>
+                </form>
+            </div>
+        </div>
+      </div>
+
+      <div class="container">
 
         <div class="row" id="signup">
 
           <div class="col-md-4 mb-3 mb-md-0">
             <div class="card py-4 h-100">
               <div class="card-body text-center">
-                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                <i class="fas fa-linkedin text-primary mb-2"></i>
                 <h4 class="text-uppercase m-0">LinkedIn</h4>
                 <hr class="my-4">
                 <div class="small text-black-50"><a href="https://www.linkedin.com/in/connor-mullett-062300161/">Click Me</a></div>
