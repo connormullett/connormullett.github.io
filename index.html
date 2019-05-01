@@ -23,7 +23,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/grayscale.css" rel="stylesheet">
-
+    <link href="css/styles.css" rel="stylesheet">
   </head>
 
   <body id="page-top">
@@ -68,7 +68,7 @@
         <div class="row">
           <div class="col-lg-8 mx-auto" >
             <h1 class="text-white mb-4">Who I Am</h1>
-            <p class="text-white">I am a hardworking, dedicated, fast learning individual that always strives for more. I currently live in Central Indiana where I currently am an enlisted Combat Medic in the Indiana Army National
+            <p class="text-white content-text">I am a hardworking, dedicated, fast learning individual that always strives for more. I currently live in Central Indiana where I currently am an enlisted Combat Medic in the Indiana Army National
               Guard. I have been coding off and on ever since I was 10, and always had a passion for Computer Science and programming.
               My father, being a developer himself, has been a huge influence on my decision to follow this path. The Army has instilled in me
               much more than I can write, but I hold true to the values, even as a civilian.
@@ -83,27 +83,119 @@
     <section id="projects" class="projects-section bg-light">
       <div class="container">
 
-        <!-- Featured Project Row -->
         <div class="row align-items-center no-gutters mb-4 mb-lg-5 wow slideInUp" data-wow-offset="10">
           <div class="col-xl-8 col-lg-7">
             <img class="img-fluid mb-3 mb-lg-0" src="img/codingexpimage.jpg" alt="">
           </div>
-          <div class="col-xl-4 col-lg-5">
+          <div class="col-xl-4 col-lg-5" id="project-desc">
             <div class="featured-text text-center text-lg-left">
               <h4>Coding Experience</h4>
-              <p class="text-black mb-0">
+              <p class="text-black content-text">
                 I believe myself to be well rounded in Python and other C languages.
-                I am experienced in .Net, Java, Front-End frameworks, and API development.
-                I have a hunger to learn and the drive to it. My favorite challenges are when
-                I say to myself, "I can code that".
+                I am experienced in .Net, Java, Front-End frameworks, and API development. Most of 
+                my projects, listed below, were born from either needs or fun ideas in order
+                from most recent to earliest. I have a hunger to learn and the drive to do it.
                 Below are only a few of my projects; however, my
-                <a href="https://github.com/connormullett" target="blank">github</a> has all of my projects
+                <a href="https://github.com/connormullett" target="_blank">github</a> has all of them
               </p>
             </div>
           </div>
         </div>
 
-        <!-- Project One Row -->
+        <!-- K49 -->
+        <div class="row justify-content-center no-gutters mb-5 mb-lg-0 wow slideInUp" data-wow-offset="10">
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/k49.png" alt="">
+          </div>
+          <div class="col-lg-6">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div class="project-text w-100 my-auto text-center text-lg-left">
+                  <h4 class="text-white">K49</h4>
+                  <p class="mb-0 text-white content-text">A machine learning model that predicts 49 different ancient japanese characters
+                    taken from the KMNIST-49 dataset. I achieved 91% accuracy using a Convolutional Neural Network. This was my first ML model 
+                    I completed on my own.
+                  </p>
+                  <p><a href="https://github.com/connormullett/k49-model" class="project-link" target="_blank">See it Here..</a></p>
+                  <hr class="d-none d-lg-block mb-0 ml-0">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DB Status -->
+        <div class="row justify-content-center no-gutters wow slideInUp" data-wow-offset="10">
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/dbstatus.png" alt="">
+          </div>
+          <div class="col-lg-6 order-lg-first">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div class="project-text w-100 my-auto text-center text-lg-right">
+                  <h4 class="text-white">DB Status CLI</h4>
+                  <p class="text-white content-text">DB Status is a Database health checker turned SQL Shell/Query tool. Currently only supports use with PostgreSQL,
+                    however I plan on making it compatible with most popular database engines. This CLI can verify connection strings, execute prewritten scripts,
+                    perform inline queries, and can open a REPL environment similar to PSQL.
+                  </p>
+                  <p><a href="https://github.com/connormullett/db-statuscli" class="project-link" target="_blank">See it here..</a></p>
+                  <hr class="d-none d-lg-block mb-0 mr-0">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FlaskIt -->
+        <div class="row justify-content-center no-gutters mb-5 mb-lg-0 wow slideInUp" data-wow-offset="10">
+            <div class="col-lg-6">
+              <img class="img-fluid" src="img/flaskit.png" alt="">
+            </div>
+            <div class="col-lg-6">
+              <div class="bg-black text-center h-100 project">
+                <div class="d-flex h-100">
+                  <div class="project-text w-100 my-auto text-center text-lg-left">
+                    <h4 class="text-white">FlaskIt</h4>
+                    <p class="mb-0 text-white content-text">Python doesn't have alot of auto generating frameworks like that of Django,
+                      so I made one. I called it FlaskIt and it is installable as easy as <i>pip install flaskit-starter</i>. 
+                      It installs a pregenerated Flask RESTful API complete with sample endpoints,
+                      documentation, and easy managing of the project. It even comes with a manage.py file used for migrations with SQLAlchemy
+                    </p>
+                    <p><a href="https://github.com/connormullett/flaskit" class="project-link">See it Here..</a></p>
+                    <hr class="d-none d-lg-block mb-0 ml-0">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- AutoActivenv -->
+          <div class="row justify-content-center no-gutters wow slideInUp" data-wow-offset="10">
+              <div class="col-lg-6">
+                <img class="img-fluid" src="img/autoactivenv.png" alt="">
+              </div>
+              <div class="col-lg-6 order-lg-first">
+                <div class="bg-black text-center h-100 project">
+                  <div class="d-flex h-100">
+                    <div class="project-text w-100 my-auto text-center text-lg-right">
+                      <h4 class="text-white">AutoActivenv</h4>
+                      <p class="text-white content-text">Python virtual environments are amazing. What isn't amazing is forgetting
+                        to activate them and cluttering up your global install and your computer. To fix this, I wrote a <a href="https://gist.github.com/connormullett/1e2129ec8460cb7525aeab4193c38deb" target="_blank">
+                        Bash script</a> that automatically activates and deactivates my virtual environments for me. All that was needed to be done was place it in your shells config
+                        file. Then I thought of a way to make it automatic so you don't mess up your terminal on accident. I created AutoActivenv, it automatically detects
+                        your shell, locates your config file, and writes the script in one CLI installable with <i>pip install auto-activenv</i>. What I am most proud of
+                        about this project is the main file only consists of 40 lines of code, is compatible with Mac, Linux, Python2, and Python3.5+
+                      </p>
+                      <p><a href="https://github.com/connormullett/auto-activenv" class="project-link" target="_blank">See it here..</a></p>
+                      <hr class="d-none d-lg-block mb-0 mr-0">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+
+        <!-- EnumeratePI -->
         <div class="row justify-content-center no-gutters mb-5 mb-lg-0 wow slideInUp" data-wow-offset="10">
           <div class="col-lg-6">
             <img class="img-fluid" src="img/EnumeratePi.jpg" alt="">
@@ -113,10 +205,10 @@
               <div class="d-flex h-100">
                 <div class="project-text w-100 my-auto text-center text-lg-left">
                   <h4 class="text-white">Enumerate Pi</h4>
-                  <p class="mb-0 text-white">A quick project where I took the pi calculating algorithm and implemented it in a Console App to enumerate all
+                  <p class="mb-0 text-white content-text">A quick project where I took a pi calculating algorithm and implemented it in C# to enumerate all
                     digits to infinity
                   </p>
-                  <p><a href="https://github.com/connormullett/enumeratePi">See it Here..</a></p>
+                  <p><a href="https://github.com/connormullett/enumeratePi" class="project-link">See it Here..</a></p>
                   <hr class="d-none d-lg-block mb-0 ml-0">
                 </div>
               </div>
@@ -134,8 +226,8 @@
               <div class="d-flex h-100">
                 <div class="project-text w-100 my-auto text-center text-lg-right">
                   <h4 class="text-white">Caesar Cipher</h4>
-                  <p class="text-white">Created a basic Caesar Cipher where you can enter your own text, will give you an encrypted string, and be able to decrypt it to see the original text</p>
-                  <p><a href="https://github.com/connormullett/CaesarCipherApp">See it here..</a></p>
+                  <p class="text-white content-text">Created a basic Caesar Cipher in C# where you can enter your own text, will give you an encrypted string, and be able to decrypt it to see the original text</p>
+                  <p><a href="https://github.com/connormullett/CaesarCipherApp" class="project-link">See it here..</a></p>
                   <hr class="d-none d-lg-block mb-0 mr-0">
                 </div>
               </div>
@@ -153,10 +245,10 @@
               <div class="d-flex h-100">
                 <div class="project-text w-100 my-auto text-center text-lg-left">
                   <h4 class="text-white">Simple Search Engine</h4>
-                  <p class="mb-0 text-white">An instructor gave me a side challenge to create a simple search engine. The prompt for the challenge is located
+                  <p class="mb-0 text-white content-text">An instructor gave me a side challenge to create a simple search engine. The prompt for the challenge is located
                     in the repo linked below
                   </p>
-                  <p><a href="https://github.com/connormullett/SearchEngine">See it Here..</a></p>
+                  <p><a href="https://github.com/connormullett/SearchEngine" class="project-link">See it Here..</a></p>
                   <hr class="d-none d-lg-block mb-0 ml-0">
                 </div>
               </div>
@@ -164,7 +256,7 @@
           </div>
         </div>
 
-        <!-- Project Two Row -->
+        <!-- Sael -->
         <div class="row justify-content-center no-gutters wow slideInUp" data-wow-offset="10">
           <div class="col-lg-6">
             <img class="img-fluid" src="img/Sail-Image.jpg" alt="">
@@ -173,9 +265,9 @@
             <div class="bg-black text-center h-100 project">
               <div class="d-flex h-100">
                 <div class="project-text w-100 my-auto text-center text-lg-right">
-                  <h4 class="text-white">ASP.Net Application</h4>
-                  <p class="mb-0 text-white">A website built using Asp.Net. It is an Uber clone, but for boating. Web App is deployed on Azure</p>
-                  <p><a href="https://sailwatertransport.azurewebsites.net/">See it here..</a></p>
+                  <h4 class="text-white">ASP.Net Web Application, Sæl</h4>
+                  <p class="mb-0 text-white content-text">A website built using Asp.Net. It is an Uber clone, but for boating. Web App is deployed on Azure</p>
+                  <p><a href="https://sailwatertransport.azurewebsites.net/" class="project-link">See it here..</a></p>
                   <hr class="d-none d-lg-block mb-0 mr-0">
                 </div>
               </div>
@@ -183,6 +275,7 @@
           </div>
         </div>
 
+        <!-- Cashflow -->
         <div class="row justify-content-center no-gutters mb-5 mb-lg-0 wow slideInUp" data-wow-offset="10">
           <div class="col-lg-6">
             <img class="img-fluid" src="img/cashflow.jpg" alt="">
@@ -191,9 +284,9 @@
             <div class="bg-black text-center h-100 project">
               <div class="d-flex h-100">
                 <div class="project-text w-100 my-auto text-center text-lg-left">
-                  <h4 class="text-white">Angular Financial Application</h4>
-                  <p class="mb-0 text-white">A financial tracking application that uses angular and a .Net WebAPI, see the deployed
-                    version <a href="https://cashflowfinances.herokuapp.com">here</a>. See the repo <a href="https://github.com/connormullett/cashFlowFinancesFinal">Here</a>
+                  <h4 class="text-white">Angular Financial Application, CashFlow</h4>
+                  <p class="mb-0 text-white content-text">A financial tracking application that uses angular and a .Net WebAPI, see the deployed
+                    version <a href="https://cashflowfinances.herokuapp.com" class="project-link">here</a>. See the repo <a href="https://github.com/connormullett/cashFlowFinancesFinal">Here</a>
                   </p>
                   <hr class="d-none d-lg-block mb-0 ml-0">
                 </div>
@@ -204,6 +297,7 @@
 
       </div>
     </section>
+
     <!-- Contact Section -->
     <section class="contact-section bg-black wow slideInLeft">
       <div class="container">
@@ -260,22 +354,22 @@
 
           <div class="col-md-4 mb-3 mb-md-0">
             <div class="card py-4 h-100">
-              <div class="card-body text-center">
+              <div class="card-body text-center content-text">
                 <i class="fas fa-linkedin text-primary mb-2"></i>
                 <h4 class="text-uppercase m-0">LinkedIn</h4>
                 <hr class="my-4">
-                <div class="small text-black-50"><p><a href="https://www.linkedin.com/in/connor-mullett-062300161/">Click Me</a></p></div>
+                <div class="small text-black"><p><a href="https://www.linkedin.com/in/connor-mullett-062300161/">Click Me</a></p></div>
               </div>
             </div>
           </div>
 
           <div class="col-md-4 mb-3 mb-md-0">
             <div class="card py-4 h-100">
-              <div class="card-body text-center">
+              <div class="card-body text-center content-text">
                 <i class="fas fa-envelope text-primary mb-2"></i>
                 <h4 class="text-uppercase m-0">Email</h4>
                 <hr class="my-4">
-                <div class="small text-black-50">
+                <div class="small text-black">
                   <p>connormullett@gmail.com</p>
                 </div>
               </div>
@@ -284,11 +378,11 @@
 
           <div class="col-md-4 mb-3 mb-md-0">
             <div class="card py-4 h-100">
-              <div class="card-body text-center">
+              <div class="card-body text-center content-text">
                 <i class="fas fa-mobile-alt text-primary mb-2"></i>
                 <h4 class="text-uppercase m-0">Phone</h4>
                 <hr class="my-4">
-                <div class="small text-black-50"><p>+1 (317)439-0698</p></div>
+                <div class="small text-black-50"><p>+1 (317) 439-0698</p></div>
               </div>
             </div>
           </div>
